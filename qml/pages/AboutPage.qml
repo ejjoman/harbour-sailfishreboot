@@ -69,10 +69,10 @@ Page {
 //                title: qsTr("About SailfishReboot")
 //            }
 
-            AboutItem {
-                label: qsTr("Version")
-                value: "0.0.1"
-            }
+//            AboutItem {
+//                label: qsTr("Version")
+//                value: "0.0.1"
+//            }
 
             AboutItem {
                 label: qsTr("Project Home")
@@ -94,6 +94,11 @@ Page {
             }
 
             AboutItem {
+                label: qsTr("Mail")
+                value: "m.neufing@yahoo.de"
+            }
+
+            AboutItem {
                 label: qsTr("Twitter")
                 value: "@ejjoman"
             }
@@ -102,8 +107,6 @@ Page {
                 label: qsTr("Donate")
                 value: "via PayPal"
             }
-
-            ValueButton {}
         }
     }
 }
