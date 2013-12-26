@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Name=SailfishReboot
+Icon=harbour-SailfishReboot
+Exec=harbour-SailfishReboot
+
