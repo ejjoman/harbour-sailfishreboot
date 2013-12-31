@@ -41,72 +41,89 @@ Page {
         source: "../images/SailfishRebootCover.png"
     }
 
-    // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
+        clip: true
+        contentHeight: column.height
+
         anchors {
             top: aboutCover.bottom
             bottom: parent.bottom
             left: parent.left
             right: parent.right
-
-            topMargin: Theme.paddingLarge
         }
 
-        //anchors.fill: parent
-
-        // Tell SilicaFlickable the height of its content.
-        contentHeight: column.height
-
-        // Place our content in a Column.  The PageHeader is always placed at the top
-        // of the page, followed by our content.
         Column {
             id: column
 
             width: page.width
-            spacing: Theme.paddingLarge
+            spacing: Theme.paddingMedium
 
-//            PageHeader {
-//                title: qsTr("About SailfishReboot")
-//            }
-
-//            AboutItem {
-//                label: qsTr("Version")
-//                value: "0.0.1"
-//            }
+            Item {
+                height: Theme.paddingMedium
+                width: parent.width
+            }
 
             AboutItem {
                 label: qsTr("Project Home")
                 value: "GitHub"
 
                 onClicked: {
-                    Qt.openUrlExternally("http://ejjoman.github.io/SailfishReboot")
+                    openUrlPopup.openUrl("http://ejjoman.github.io/SailfishReboot")
                 }
             }
 
             AboutItem {
                 label: qsTr("License")
                 value: "GNU General Public License v3"
+
+                onClicked: {
+                    pageStack.push(Qt.resolvedUrl("LicensePage.qml"))
+                }
             }
 
             AboutItem {
-                label: qsTr("Autor")
-                value: "Michael Neufing"
-            }
+                label: qsTr("Author")
+                value: "Michael Neufing <m.neufing@yahoo.de>"
 
-            AboutItem {
-                label: qsTr("Mail")
-                value: "m.neufing@yahoo.de"
+                onClicked: {
+                    openUrlPopup.openUrl("mailto:m.neufing@yahoo.de?subject=SailfishReboot", qsTr("Mail app will open"))
+                }
             }
 
             AboutItem {
                 label: qsTr("Twitter")
                 value: "@ejjoman"
+
+                onClicked: {
+                    openUrlPopup.openUrl("https://twitter.com/ejjoman")
+                }
             }
 
             AboutItem {
                 label: qsTr("Donate")
                 value: "via PayPal"
+
+                onClicked: {
+                    openUrlPopup.openUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RGXLVJKSJTFGA")
+                }
             }
+
+            Item {
+                height: Theme.paddingMedium
+                width: parent.width
+            }
+        }
+
+        VerticalScrollDecorator {}
+    }
+
+    RemorsePopup {
+        id: openUrlPopup
+
+        function openUrl(url, title) {
+            openUrlPopup.execute(title || qsTr("Link will open"), function(){
+                Qt.openUrlExternally(url);
+            })
         }
     }
 }

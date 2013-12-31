@@ -41,7 +41,7 @@ CoverBackground {
         y: Theme.paddingLarge
         anchors.horizontalCenter: parent.horizontalCenter
         opacity: 0.4
-        source: "image://theme/harbour-SailfishReboot"
+        source: "image://theme/harbour-sailfishreboot"
     }
 
     Label {

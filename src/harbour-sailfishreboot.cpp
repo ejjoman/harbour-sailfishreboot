@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<SystemBootTime>("SailfishReboot.BootTime", 1, 0, "BootTime");
 
     QQuickView *view = SailfishApp::createView();
-    view->setSource(SailfishApp::pathTo("qml/harbour-SailfishReboot.qml"));
+    view->setSource(SailfishApp::pathTo("qml/harbour-sailfishreboot.qml"));
 
     QQmlContext *context = view->rootContext();
     //context->setContextProperty("systemBootDateTime", SystemBootTime::getSystemBootTime());

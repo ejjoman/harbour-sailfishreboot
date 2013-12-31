@@ -44,7 +44,7 @@ Page {
             id: pullDownMenu
 
             MenuItem {
-                text: qsTr("About Simple Reboot")
+                text: qsTr("About SailfishReboot")
 
                 onClicked: {
                     pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
@@ -66,7 +66,7 @@ Page {
 
         PageHeader {
             id: header
-            title: "Simple Reboot"
+            title: "SailfishReboot"
         }
 
         Item {
