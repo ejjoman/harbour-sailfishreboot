@@ -30,7 +30,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import SailfishReboot.BootTime 1.0
+import harbour.SailfishReboot.BootTime 1.0
 import "../Utils.js" as Utils
 
 CoverBackground {
@@ -80,10 +80,14 @@ CoverBackground {
         }
     }
 
-    BootTime {
-        id: bootTime
-        autoUpdate: root.status === Cover.Active || root.status === Cover.Activating
-        updateInterval: 200
+//    BootTime {
+//        id: bootTime
+//        autoUpdate: true //root.status !== Cover.Active || root.status === Cover.Activating
+//        updateInterval: 200
+//    }
+
+    onStatusChanged: {
+        console.log("[cover]", "statusChanged:", status)
     }
 }
 
