@@ -49,13 +49,12 @@ int main(int argc, char *argv[])
     // To display the view, call "show()" (will show fullscreen on device).
 
     QGuiApplication *app = SailfishApp::application(argc, argv);   
-    qmlRegisterType<SystemBootTime>("harbour.SailfishReboot.BootTime", 1, 0, "BootTime");
+    qmlRegisterType<SystemBootTime>("harbour.sailfishreboot.BootTime", 1, 0, "BootTime");
 
     QQuickView *view = SailfishApp::createView();
     view->setSource(SailfishApp::pathTo("qml/harbour-sailfishreboot.qml"));
 
     QQmlContext *context = view->rootContext();
-    //context->setContextProperty("systemBootDateTime", SystemBootTime::getSystemBootTime());
     context->setContextProperty("dsmeAdapter", new DsmeQmlAdapter());
 
     view->show();

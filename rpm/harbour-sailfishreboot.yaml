@@ -2,7 +2,7 @@ Name: harbour-sailfishreboot
 Summary: With SailfishReboot you can easily reboot or shutdown your Jolla by a simple
   click.
 Version: 0.0.1
-Release: 3
+Release: 4
 Group: Qt/Qt
 URL: http://example.org/
 License: LICENSE
