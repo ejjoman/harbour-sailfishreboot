@@ -36,66 +36,130 @@ import "../Utils.js" as Utils
 Page {
     id: page
 
+    allowedOrientations: Orientation.All
+
+    property color rebootColor: "#FFCC33"
+    property color shutdownColor: "#FF0033"
+
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
         anchors.fill: parent
 
+//        PullDownMenu {
+//            id: pullDownMenu
+
+//            MenuItem {
+//                text: qsTr("About SailfishReboot")
+
+//                onClicked: {
+//                    pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
+//                }
+//            }
+
+//            MenuLabel {
+//                text: "<b>" + qsTr("Uptime") + ":</b> " + bootTime.secondsSinceBoot.secondsToTimeString()
+
+////                BootTime {
+////                    id: bootTime
+////                    autoUpdate: pullDownMenu.active //root.status === Cover.Active || root.status === Cover.Activating
+////                    updateInterval: 200
+////                }
+//            }
+//        }
+
         PullDownMenu {
             id: pullDownMenu
+            quickSelect: true
+            highlightColor: rebootColor
+            backgroundColor: rebootColor
 
             MenuItem {
-                text: qsTr("About SailfishReboot")
-
-                onClicked: {
-                    pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
-                }
+                text: "Reboot"
+                onClicked: app.reboot();
             }
 
-            MenuLabel {
-                text: "<b>" + qsTr("Uptime") + ":</b> " + bootTime.secondsSinceBoot.secondsToTimeString()
+            Item { height: Theme.itemSizeExtraSmall; width: parent.width }
+        }
 
-//                BootTime {
-//                    id: bootTime
-//                    autoUpdate: pullDownMenu.active //root.status === Cover.Active || root.status === Cover.Activating
-//                    updateInterval: 200
-//                }
+        PushUpMenu {
+            id: pushUpMenu
+            quickSelect: true
+            highlightColor: shutdownColor
+            backgroundColor: shutdownColor
+
+            Item { height: Theme.itemSizeExtraSmall; width: parent.width }
+
+            MenuItem {
+                text: "Shutdown"
+                onClicked: app.shutdown();
             }
         }
 
         contentHeight: parent.height
 
-        PageHeader {
-            id: header
-            title: "SailfishReboot"
+        Image {
+            anchors {
+                top: parent.top
+                topMargin: Theme.paddingLarge
+                horizontalCenter: parent.horizontalCenter
+            }
+
+            source: "image://theme/icon-l-redirect?" + pullDownMenu.highlightColor
         }
 
-        Item {
+        Column {
             anchors {
-                top: header.bottom
-                bottom: parent.bottom
                 left: parent.left
                 right: parent.right
+                verticalCenter: parent.verticalCenter
             }
 
-            Column {
-                id: column
-                width: parent.width
-                spacing: Theme.paddingLarge
-
-                anchors.verticalCenter: parent.verticalCenter
-
-                Button {
-                    text: qsTr("Reboot")
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    onClicked: app.reboot();
+            Label {
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                }
+                color: Theme.secondaryColor
+                font {
+                    pixelSize: Theme.fontSizeHuge
+                    family: Theme.fontFamilyHeading
                 }
 
-                Button {
-                    text: qsTr("Shutdown")
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    onClicked: app.shutdown();
-                }
+                horizontalAlignment: Text.AlignHCenter
+                text: "Uptime"
             }
+
+            Label {
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                }
+                color: Theme.highlightColor
+                font {
+                    pixelSize: Theme.fontSizeHuge
+                    family: Theme.fontFamilyHeading
+                }
+
+                horizontalAlignment: Text.AlignHCenter
+                text: bootTime.secondsSinceBoot.secondsToTimeString()
+            }
+        }
+
+        Image {
+            anchors {
+                bottom: parent.bottom
+                bottomMargin: Theme.paddingLarge
+                horizontalCenter: parent.horizontalCenter
+            }
+
+            source: "image://theme/icon-l-power?" + pushUpMenu.highlightColor
+        }
+    }
+
+    onStatusChanged: {
+        if (status === PageStatus.Active && app._isInitial) {
+            app._isInitial = false;
+            pageStack.pushAttached(Qt.resolvedUrl("AboutPage.qml"))
         }
     }
 }

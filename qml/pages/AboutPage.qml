@@ -121,7 +121,7 @@ Page {
         id: openUrlPopup
 
         function openUrl(url, title) {
-            openUrlPopup.execute(title || qsTr("Link will open"), function(){
+            openUrlPopup.execute(title || qsTr("Link will open"), function() {
                 Qt.openUrlExternally(url);
             })
         }

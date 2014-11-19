@@ -39,6 +39,8 @@ ApplicationWindow
 {
     id: app
 
+    property bool _isInitial: true
+
     function shutdown() {
         remorsePopup.execute(qsTr("Your Jolla will shutdown"), function() {
             dsmeAdapter.shutdown();
