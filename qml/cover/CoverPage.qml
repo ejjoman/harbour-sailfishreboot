@@ -88,6 +88,7 @@ CoverBackground {
 
     onStatusChanged: {
         console.log("[cover]", "statusChanged:", status)
+        app._coverActive = status == Cover.Active
     }
 }
 

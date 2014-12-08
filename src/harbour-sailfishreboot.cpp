@@ -36,6 +36,21 @@
 #include <sailfishapp.h>
 #include "systemboottime.h"
 #include "dsmeqmladapter.h"
+#include "qmlsettings.h"
+
+static QObject *qmlsettings_singleton_provider(QQmlEngine *engine, QJSEngine *scriptEngine)
+{
+    Q_UNUSED(engine);
+    Q_UNUSED(scriptEngine);
+
+    static QmlSettings *settings = NULL;
+
+    if (!settings)
+        settings = new QmlSettings();
+
+    return settings;
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -48,8 +63,9 @@ int main(int argc, char *argv[])
     //
     // To display the view, call "show()" (will show fullscreen on device).
 
-    QGuiApplication *app = SailfishApp::application(argc, argv);   
+    QGuiApplication *app = SailfishApp::application(argc, argv);
     qmlRegisterType<SystemBootTime>("harbour.sailfishreboot.BootTime", 1, 0, "BootTime");
+    qmlRegisterSingletonType<QmlSettings>("harbour.sailfishreboot.Settings", 1, 0, "QmlSettings", qmlsettings_singleton_provider);
 
     QQuickView *view = SailfishApp::createView();
     view->setSource(SailfishApp::pathTo("qml/harbour-sailfishreboot.qml"));

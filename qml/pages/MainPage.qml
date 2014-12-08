@@ -39,43 +39,39 @@ Page {
     allowedOrientations: Orientation.All
 
     property color rebootColor: "#FFCC33"
-    property color shutdownColor: "#FF0033"
+    property color shutdownColor: "#FF3D64" //"#FF0033"
+
+    property bool _remorseTimerRunning: false
+
+    backNavigation: !_remorseTimerRunning
+    forwardNavigation: !_remorseTimerRunning
+
+    function shutdown() {
+        remorsePopup.optionalExecute(qsTr("Your device will shutdown"), settings.remorseTimeOut * 1000, function() {
+            dsmeAdapter.shutdown();
+        });
+    }
+
+    function reboot() {
+        remorsePopup.optionalExecute(qsTr("Your device will reboot"), settings.remorseTimeOut * 1000, function() {
+            dsmeAdapter.reboot();
+        });
+    }
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
         anchors.fill: parent
 
-//        PullDownMenu {
-//            id: pullDownMenu
-
-//            MenuItem {
-//                text: qsTr("About SailfishReboot")
-
-//                onClicked: {
-//                    pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
-//                }
-//            }
-
-//            MenuLabel {
-//                text: "<b>" + qsTr("Uptime") + ":</b> " + bootTime.secondsSinceBoot.secondsToTimeString()
-
-////                BootTime {
-////                    id: bootTime
-////                    autoUpdate: pullDownMenu.active //root.status === Cover.Active || root.status === Cover.Activating
-////                    updateInterval: 200
-////                }
-//            }
-//        }
-
         PullDownMenu {
             id: pullDownMenu
+            //enabled: !_remorseTimerRunning
             quickSelect: true
-            highlightColor: rebootColor
-            backgroundColor: rebootColor
+            highlightColor: settings.useColoredActions ? rebootColor : Theme.highlightColor
+            backgroundColor: settings.useColoredActions ? rebootColor : Theme.highlightBackgroundColor
 
             MenuItem {
-                text: "Reboot"
-                onClicked: app.reboot();
+                text: qsTr("Reboot")
+                onClicked: reboot()
             }
 
             Item { height: Theme.itemSizeExtraSmall; width: parent.width }
@@ -83,15 +79,16 @@ Page {
 
         PushUpMenu {
             id: pushUpMenu
+            //enabled: !_remorseTimerRunning
             quickSelect: true
-            highlightColor: shutdownColor
-            backgroundColor: shutdownColor
+            highlightColor: settings.useColoredActions ? shutdownColor : Theme.highlightColor
+            backgroundColor: settings.useColoredActions ? shutdownColor : Theme.highlightBackgroundColor
 
             Item { height: Theme.itemSizeExtraSmall; width: parent.width }
 
             MenuItem {
-                text: "Shutdown"
-                onClicked: app.shutdown();
+                text: qsTr("Shutdown")
+                onClicked: shutdown()
             }
         }
 
@@ -126,7 +123,7 @@ Page {
                 }
 
                 horizontalAlignment: Text.AlignHCenter
-                text: "Uptime"
+                text: qsTr("Uptime")
             }
 
             Label {
@@ -160,6 +157,32 @@ Page {
         if (status === PageStatus.Active && app._isInitial) {
             app._isInitial = false;
             pageStack.pushAttached(Qt.resolvedUrl("AboutPage.qml"))
+        }
+    }
+
+    RemorsePopup {
+        id: remorsePopup
+
+        //anchors.bottom: parent.bottom
+
+        onCanceled: {
+            _remorseTimerRunning = false;
+        }
+
+        onTriggered: {
+            _remorseTimerRunning = false;
+        }
+
+        function optionalExecute(text, timeout, callback) {
+            if (timeout === 0) {
+                callback()
+            } else {
+                _remorseTimerRunning = true;
+
+                remorsePopup.execute(text, function() {
+                    callback();
+                }, timeout);
+            }
         }
     }
 }

@@ -34,24 +34,13 @@ import harbour.sailfishreboot.BootTime 1.0
 
 import "pages"
 import "cover"
+import "common"
 
 ApplicationWindow
 {
     id: app
 
     property bool _isInitial: true
-
-    function shutdown() {
-        remorsePopup.execute(qsTr("Your Jolla will shutdown"), function() {
-            dsmeAdapter.shutdown();
-        });
-    }
-
-    function reboot() {
-        remorsePopup.execute(qsTr("Your Jolla will reboot"), function() {
-            dsmeAdapter.reboot();
-        });
-    }
 
     initialPage: Component {
         MainPage {}
@@ -61,14 +50,16 @@ ApplicationWindow
         CoverPage {}
     }
 
+    property bool _coverActive: false
+
     BootTime {
         id: bootTime
-        autoUpdate: true
+        autoUpdate: app.applicationActive || _coverActive //coverPage.status == Cover.Active
         updateInterval: 200
     }
 
-    RemorsePopup {
-        id: remorsePopup
+    Settings {
+        id: settings
     }
 }
 
