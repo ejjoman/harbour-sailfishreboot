@@ -79,17 +79,6 @@ CoverBackground {
             }
         }
     }
-
-//    BootTime {
-//        id: bootTime
-//        autoUpdate: true //root.status !== Cover.Active || root.status === Cover.Activating
-//        updateInterval: 200
-//    }
-
-    onStatusChanged: {
-        console.log("[cover]", "statusChanged:", status)
-        app._coverActive = status == Cover.Active
-    }
 }
 
 

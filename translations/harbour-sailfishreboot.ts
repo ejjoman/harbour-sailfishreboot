@@ -135,27 +135,17 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="50"/>
-        <source>Your device will shutdown</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage.qml" line="56"/>
-        <source>Your device will reboot</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MainPage.qml" line="73"/>
+        <location filename="../qml/pages/MainPage.qml" line="59"/>
         <source>Reboot</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="90"/>
+        <location filename="../qml/pages/MainPage.qml" line="76"/>
         <source>Shutdown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="126"/>
+        <location filename="../qml/pages/MainPage.qml" line="112"/>
         <source>Uptime</source>
         <translation type="unfinished"></translation>
     </message>
@@ -195,6 +185,19 @@
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="21"/>
         <source>Use custom colors for reboot and shutdown actions</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>harbour-sailfishreboot</name>
+    <message>
+        <location filename="../qml/harbour-sailfishreboot.qml" line="57"/>
+        <source>Your device will shutdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
+        <source>Your device will reboot</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

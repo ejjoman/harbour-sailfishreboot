@@ -41,22 +41,8 @@ Page {
     property color rebootColor: "#FFCC33"
     property color shutdownColor: "#FF3D64" //"#FF0033"
 
-    property bool _remorseTimerRunning: false
-
-    backNavigation: !_remorseTimerRunning
-    forwardNavigation: !_remorseTimerRunning
-
-    function shutdown() {
-        remorsePopup.optionalExecute(qsTr("Your device will shutdown"), settings.remorseTimeOut * 1000, function() {
-            dsmeAdapter.shutdown();
-        });
-    }
-
-    function reboot() {
-        remorsePopup.optionalExecute(qsTr("Your device will reboot"), settings.remorseTimeOut * 1000, function() {
-            dsmeAdapter.reboot();
-        });
-    }
+    backNavigation: !app._remorseTimerRunning
+    forwardNavigation: !app._remorseTimerRunning
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
@@ -71,7 +57,7 @@ Page {
 
             MenuItem {
                 text: qsTr("Reboot")
-                onClicked: reboot()
+                onClicked: app.reboot()
             }
 
             Item { height: Theme.itemSizeExtraSmall; width: parent.width }
@@ -88,7 +74,7 @@ Page {
 
             MenuItem {
                 text: qsTr("Shutdown")
-                onClicked: shutdown()
+                onClicked: app.shutdown()
             }
         }
 
@@ -157,32 +143,6 @@ Page {
         if (status === PageStatus.Active && app._isInitial) {
             app._isInitial = false;
             pageStack.pushAttached(Qt.resolvedUrl("AboutPage.qml"))
-        }
-    }
-
-    RemorsePopup {
-        id: remorsePopup
-
-        //anchors.bottom: parent.bottom
-
-        onCanceled: {
-            _remorseTimerRunning = false;
-        }
-
-        onTriggered: {
-            _remorseTimerRunning = false;
-        }
-
-        function optionalExecute(text, timeout, callback) {
-            if (timeout === 0) {
-                callback()
-            } else {
-                _remorseTimerRunning = true;
-
-                remorsePopup.execute(text, function() {
-                    callback();
-                }, timeout);
-            }
         }
     }
 }

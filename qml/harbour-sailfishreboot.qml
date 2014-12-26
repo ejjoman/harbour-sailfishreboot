@@ -51,6 +51,19 @@ ApplicationWindow
     }
 
     property bool _coverActive: false
+    property bool _remorseTimerRunning: false
+
+    function shutdown() {
+        remorsePopup.optionalExecute(qsTr("Your device will shutdown"), settings.remorseTimeOut * 1000, function() {
+            dsmeAdapter.shutdown();
+        });
+    }
+
+    function reboot() {
+        remorsePopup.optionalExecute(qsTr("Your device will reboot"), settings.remorseTimeOut * 1000, function() {
+            dsmeAdapter.reboot();
+        });
+    }
 
     BootTime {
         id: bootTime
@@ -60,6 +73,30 @@ ApplicationWindow
 
     Settings {
         id: settings
+    }
+
+    RemorsePopup {
+        id: remorsePopup
+
+        onCanceled: {
+            _remorseTimerRunning = false;
+        }
+
+        onTriggered: {
+            _remorseTimerRunning = false;
+        }
+
+        function optionalExecute(text, timeout, callback) {
+            if (timeout === 0) {
+                callback()
+            } else {
+                _remorseTimerRunning = true;
+
+                remorsePopup.execute(text, function() {
+                    callback();
+                }, timeout);
+            }
+        }
     }
 }
 

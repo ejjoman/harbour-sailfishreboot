@@ -135,27 +135,25 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="50"/>
         <source>Your device will shutdown</source>
-        <translation>Dein Gerät wird ausgeschaltet</translation>
+        <translation type="vanished">Dein Gerät wird ausgeschaltet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="56"/>
         <source>Your device will reboot</source>
-        <translation>Dein Gerät wird neugestartet</translation>
+        <translation type="vanished">Dein Gerät wird neugestartet</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="73"/>
+        <location filename="../qml/pages/MainPage.qml" line="59"/>
         <source>Reboot</source>
         <translation>Neu starten</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="90"/>
+        <location filename="../qml/pages/MainPage.qml" line="76"/>
         <source>Shutdown</source>
         <translation>Ausschalten</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="126"/>
+        <location filename="../qml/pages/MainPage.qml" line="112"/>
         <source>Uptime</source>
         <translation>Betriebszeit</translation>
     </message>
@@ -196,6 +194,19 @@
         <location filename="../qml/pages/SettingsPage.qml" line="21"/>
         <source>Use custom colors for reboot and shutdown actions</source>
         <translation>Eigene Farben für die Neu start- und Ausschalt-Aktionen benutzen</translation>
+    </message>
+</context>
+<context>
+    <name>harbour-sailfishreboot</name>
+    <message>
+        <location filename="../qml/harbour-sailfishreboot.qml" line="57"/>
+        <source>Your device will shutdown</source>
+        <translation type="unfinished">Dein Gerät wird ausgeschaltet</translation>
+    </message>
+    <message>
+        <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
+        <source>Your device will reboot</source>
+        <translation type="unfinished">Dein Gerät wird neugestartet</translation>
     </message>
 </context>
 </TS>

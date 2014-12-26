@@ -13,11 +13,11 @@ Name:       harbour-sailfishreboot
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    With SailfishReboot you can easily reboot or shutdown your Jolla by a simple click.
-Version:    1.0.0
+Version:    1.0.1
 Release:    1
 Group:      Qt/Qt
-License:    LICENSE
-URL:        http://example.org/
+License:    GPLv3
+URL:        https://github.com/ejjoman/harbour-sailfishreboot
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-sailfishreboot.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
