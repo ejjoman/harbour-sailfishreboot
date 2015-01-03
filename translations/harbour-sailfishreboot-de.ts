@@ -2,6 +2,15 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="de">
 <context>
+    <name></name>
+    <message id="names-of-translators">
+        <location filename="../qml/common/AboutModel.qml" line="57"/>
+        <source></source>
+        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
+        <translation>Michael Neufing</translation>
+    </message>
+</context>
+<context>
     <name>AboutModel</name>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="9"/>
@@ -71,12 +80,6 @@
         <translation>Übersetzung bereitgestellt von</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="57"/>
-        <source>Michael Neufing</source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation>Michael Neufing</translation>
-    </message>
-    <message>
         <location filename="../qml/common/AboutModel.qml" line="58"/>
         <location filename="../qml/common/AboutModel.qml" line="63"/>
         <source>Translation</source>
@@ -135,14 +138,6 @@
 <context>
     <name>MainPage</name>
     <message>
-        <source>Your device will shutdown</source>
-        <translation type="vanished">Dein Gerät wird ausgeschaltet</translation>
-    </message>
-    <message>
-        <source>Your device will reboot</source>
-        <translation type="vanished">Dein Gerät wird neugestartet</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/MainPage.qml" line="59"/>
         <source>Reboot</source>
         <translation>Neu starten</translation>
@@ -175,15 +170,13 @@
         <source>Off</source>
         <translation>Aus</translation>
     </message>
-    <message>
+    <message numerus="yes">
         <location filename="../qml/pages/SettingsPage.qml" line="42"/>
-        <source>%1 second</source>
-        <translation>%1 Sekunde</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
-        <source>%1 seconds</source>
-        <translation>%1 Sekunden</translation>
+        <source>%n second(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="20"/>
@@ -193,7 +186,7 @@
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="21"/>
         <source>Use custom colors for reboot and shutdown actions</source>
-        <translation>Eigene Farben für die Neu start- und Ausschalt-Aktionen benutzen</translation>
+        <translation>Eigene Farben für die Neustart- und Ausschaltaktionen benutzen</translation>
     </message>
 </context>
 <context>
@@ -201,12 +194,12 @@
     <message>
         <location filename="../qml/harbour-sailfishreboot.qml" line="57"/>
         <source>Your device will shutdown</source>
-        <translation type="unfinished">Dein Gerät wird ausgeschaltet</translation>
+        <translation>Dein Gerät wird ausgeschaltet</translation>
     </message>
     <message>
         <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
         <source>Your device will reboot</source>
-        <translation type="unfinished">Dein Gerät wird neugestartet</translation>
+        <translation>Dein Gerät wird neugestartet</translation>
     </message>
 </context>
 </TS>

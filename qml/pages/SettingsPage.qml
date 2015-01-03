@@ -39,7 +39,7 @@ Page {
                     if (value == 0)
                         return qsTr("Off")
 
-                    return (value == 1 ? qsTr("%1 second").arg(value) : qsTr("%1 seconds").arg(value))
+                    return qsTr("%n second(s)", "", value);
                 }
 
                 onValueChanged: {
