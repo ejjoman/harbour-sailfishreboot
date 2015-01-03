@@ -4,10 +4,9 @@
 <context>
     <name></name>
     <message id="names-of-translators">
-        <location filename="../qml/common/AboutModel.qml" line="57"/>
         <source></source>
         <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation>Michael Neufing</translation>
+        <translation type="vanished">Michael Neufing</translation>
     </message>
 </context>
 <context>
@@ -78,6 +77,12 @@
         <location filename="../qml/common/AboutModel.qml" line="54"/>
         <source>Translation provided by</source>
         <translation>Übersetzung bereitgestellt von</translation>
+    </message>
+    <message>
+        <location filename="../qml/common/AboutModel.qml" line="57"/>
+        <source>Michael Neufing</source>
+        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="58"/>

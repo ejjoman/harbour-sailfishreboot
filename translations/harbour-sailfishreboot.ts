@@ -2,15 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
-    <name></name>
-    <message id="names-of-translators">
-        <location filename="../qml/common/AboutModel.qml" line="57"/>
-        <source></source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>AboutModel</name>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="9"/>
@@ -77,6 +68,12 @@
     <message>
         <location filename="../qml/common/AboutModel.qml" line="54"/>
         <source>Translation provided by</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/AboutModel.qml" line="57"/>
+        <source>Michael Neufing</source>
+        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
