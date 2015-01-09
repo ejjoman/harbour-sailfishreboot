@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
 <TS version="2.1" language="de">
 <context>
-    <name></name>
+    <name/>
     <message id="names-of-translators">
-        <source></source>
+        <source/>
         <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
         <translation type="vanished">Michael Neufing</translation>
     </message>
@@ -82,7 +82,7 @@
         <location filename="../qml/common/AboutModel.qml" line="57"/>
         <source>Michael Neufing</source>
         <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Michael Neufing</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="58"/>
@@ -178,11 +178,9 @@
     <message numerus="yes">
         <location filename="../qml/pages/SettingsPage.qml" line="42"/>
         <source>%n second(s)</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
+        <translation><numerusform>Sekunde</numerusform>
+        <numerusform>Sekunden</numerusform>
+        </translation></message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="20"/>
         <source>Custom colors</source>
