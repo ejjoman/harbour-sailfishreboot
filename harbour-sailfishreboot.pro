@@ -43,4 +43,6 @@ HEADERS += \
 # to disable building translations every time, comment out the
 # following CONFIG line
 CONFIG += sailfishapp_i18n
-TRANSLATIONS += translations/harbour-sailfishreboot-de.ts
+TRANSLATIONS += \
+    translations/harbour-sailfishreboot-en.ts \
+    translations/harbour-sailfishreboot-de.ts
