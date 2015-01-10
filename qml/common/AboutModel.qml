@@ -54,14 +54,14 @@ ListModel {
                         title: qsTr("Translation provided by"),
 
                         //: Insert the Name(s) of the translator(s) here
-                        subTitle: qsTr("Michael Neufing"), //qsTrId("names-of-translators"), //("Michael Neufing"),
+                        subTitle: qsTrId("names-of-translators"),
                         group: qsTr("Translation")
                     },
                     {
                         title: qsTr("Translate this app"),
-                        subTitle: qsTr("on Transifex"),
+                        subTitle: qsTr("on translate.neufing.org"),
                         group: qsTr("Translation"),
-                        url: "https://www.transifex.com/projects/p/harbour-sailfishreboot/"
+                        url: "https://translate.neufing.org/projects/sailfishreboot/sailfishreboot-app/"
                     }
                 ]
 

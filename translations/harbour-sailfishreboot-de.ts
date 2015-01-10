@@ -1,12 +1,13 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="de">
 <context>
-    <name/>
+    <name></name>
     <message id="names-of-translators">
-        <source/>
+        <location filename="../qml/common/AboutModel.qml" line="57"/>
+        <source></source>
         <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation type="vanished">Michael Neufing</translation>
+        <translation>Michael Neufing</translation>
     </message>
 </context>
 <context>
@@ -79,10 +80,14 @@
         <translation>Übersetzung bereitgestellt von</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="57"/>
+        <location filename="../qml/common/AboutModel.qml" line="62"/>
+        <source>on translate.neufing.org</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Michael Neufing</source>
         <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation>Michael Neufing</translation>
+        <translation type="vanished">Michael Neufing</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="58"/>
@@ -96,9 +101,8 @@
         <translation>Hilf mit, diese App zu übersetzen</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="62"/>
         <source>on Transifex</source>
-        <translation>auf Transifex</translation>
+        <translation type="vanished">auf Transifex</translation>
     </message>
 </context>
 <context>
@@ -178,9 +182,11 @@
     <message numerus="yes">
         <location filename="../qml/pages/SettingsPage.qml" line="42"/>
         <source>%n second(s)</source>
-        <translation><numerusform>%n Sekunde</numerusform>
-        <numerusform>%n Sekunden</numerusform>
-        </translation></message>
+        <translation>
+            <numerusform>%n Sekunde</numerusform>
+            <numerusform>%n Sekunden</numerusform>
+        </translation>
+    </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="20"/>
         <source>Custom colors</source>
