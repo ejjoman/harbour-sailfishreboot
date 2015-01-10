@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE TS>
 <TS version="2.1" language="de">
 <context>
-    <name></name>
+    <name/>
     <message id="names-of-translators">
         <location filename="../qml/common/AboutModel.qml" line="57"/>
-        <source></source>
+        <source/>
         <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
         <translation>Michael Neufing</translation>
     </message>
@@ -82,7 +82,7 @@
     <message>
         <location filename="../qml/common/AboutModel.qml" line="62"/>
         <source>on translate.neufing.org</source>
-        <translation type="unfinished"></translation>
+        <translation>auf translate.neufing.org</translation>
     </message>
     <message>
         <source>Michael Neufing</source>
