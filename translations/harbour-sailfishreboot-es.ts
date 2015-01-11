@@ -82,11 +82,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Michael Neufing</source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation type="vanished">Michael Neufing</translation>
-    </message>
-    <message>
         <location filename="../qml/common/AboutModel.qml" line="58"/>
         <location filename="../qml/common/AboutModel.qml" line="63"/>
         <source>Translation</source>
@@ -96,10 +91,6 @@
         <location filename="../qml/common/AboutModel.qml" line="61"/>
         <source>Translate this app</source>
         <translation>Traducir esta aplicación</translation>
-    </message>
-    <message>
-        <source>on Transifex</source>
-        <translation type="vanished">en Transifex</translation>
     </message>
 </context>
 <context>

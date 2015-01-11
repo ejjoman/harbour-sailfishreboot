@@ -92,10 +92,6 @@
         <source>Translate this app</source>
         <translation>Traduce esta aplicación </translation>
     </message>
-    <message>
-        <source>on Transifex</source>
-        <translation type="vanished">en Transifex</translation>
-    </message>
 </context>
 <context>
     <name>AboutPage</name>

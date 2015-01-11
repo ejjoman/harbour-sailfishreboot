@@ -2,14 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="de">
 <context>
-    <name></name>
-    <message id="names-of-translators">
-        <source></source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation type="vanished">Michael Neufing</translation>
-    </message>
-</context>
-<context>
     <name>AboutModel</name>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="9"/>
@@ -90,11 +82,6 @@
         <translation>auf translate.neufing.org</translation>
     </message>
     <message>
-        <source>Michael Neufing</source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation type="vanished">Michael Neufing</translation>
-    </message>
-    <message>
         <location filename="../qml/common/AboutModel.qml" line="58"/>
         <location filename="../qml/common/AboutModel.qml" line="63"/>
         <source>Translation</source>
@@ -104,10 +91,6 @@
         <location filename="../qml/common/AboutModel.qml" line="61"/>
         <source>Translate this app</source>
         <translation>Hilf mit, diese App zu übersetzen</translation>
-    </message>
-    <message>
-        <source>on Transifex</source>
-        <translation type="vanished">auf Transifex</translation>
     </message>
 </context>
 <context>
