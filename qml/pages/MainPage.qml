@@ -102,12 +102,12 @@ Page {
                     left: parent.left
                     right: parent.right
                 }
-                color: Theme.secondaryColor
                 font {
                     pixelSize: Theme.fontSizeHuge
                     family: Theme.fontFamilyHeading
                 }
-
+                color: Theme.secondaryColor
+                wrapMode: Text.Wrap
                 horizontalAlignment: Text.AlignHCenter
                 text: qsTr("Uptime")
             }

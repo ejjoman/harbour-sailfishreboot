@@ -1,47 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de">
-<context>
-    <name></name>
-    <message id="names-of-translators">
-        <source></source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation type="vanished">Michael Neufing</translation>
-    </message>
-</context>
+<TS version="2.1" language="ca">
 <context>
     <name>AboutModel</name>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="9"/>
         <source>Project Home</source>
-        <translation>Projekt-Homepage</translation>
+        <translation>Pàgina del projecte</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="10"/>
         <source>on GitHub</source>
-        <translation>auf GitHub</translation>
+        <translation>a GitHub</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="11"/>
         <location filename="../qml/common/AboutModel.qml" line="17"/>
         <location filename="../qml/common/AboutModel.qml" line="23"/>
         <source>Project</source>
-        <translation>Projekt</translation>
+        <translation>Projecte</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="15"/>
         <source>License</source>
-        <translation>Lizenz</translation>
+        <translation>Llicència</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="21"/>
         <source>Report a bug or send a feature request</source>
-        <translation>Fehler melden oder Verbesserungsvorschlag senden</translation>
+        <translation>Informeu d&apos;errors o sol·liciteu millores</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="22"/>
         <source>on GitHub Issues</source>
-        <translation>auf GitHub Issues</translation>
+        <translation>a les incidències de GitHub</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="27"/>
@@ -61,22 +53,22 @@
         <location filename="../qml/common/AboutModel.qml" line="42"/>
         <location filename="../qml/common/AboutModel.qml" line="48"/>
         <source>Donate</source>
-        <translation>Spenden</translation>
+        <translation>Feu una donació</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="43"/>
         <source>via PayPal</source>
-        <translation>über PayPal</translation>
+        <translation>via PayPal</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="49"/>
         <source>via Flattr</source>
-        <translation>über Flattr</translation>
+        <translation>via Flattr</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="54"/>
         <source>Translation provided by</source>
-        <translation>Übersetzung bereitgestellt von</translation>
+        <translation>Traduït per</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="57"/>
@@ -87,27 +79,27 @@
     <message>
         <location filename="../qml/common/AboutModel.qml" line="62"/>
         <source>on translate.neufing.org</source>
-        <translation>auf translate.neufing.org</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Michael Neufing</source>
         <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation type="vanished">Michael Neufing</translation>
+        <translation type="vanished">Agustí Clara</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="58"/>
         <location filename="../qml/common/AboutModel.qml" line="63"/>
         <source>Translation</source>
-        <translation>Übersetzung</translation>
+        <translation>Traducció</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="61"/>
         <source>Translate this app</source>
-        <translation>Hilf mit, diese App zu übersetzen</translation>
+        <translation>Traduïu aquesta aplicació</translation>
     </message>
     <message>
         <source>on Transifex</source>
-        <translation type="vanished">auf Transifex</translation>
+        <translation type="vanished">a Transifex</translation>
     </message>
 </context>
 <context>
@@ -115,22 +107,22 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="16"/>
         <source>Settings</source>
-        <translation>Einstellungen</translation>
+        <translation>Configuració</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="26"/>
         <source>About SailfishReboot</source>
-        <translation>Über SailfishReboot</translation>
+        <translation>Quant a SailfishReboot</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="46"/>
         <source>Link will open</source>
-        <translation>Link wird geöffnet</translation>
+        <translation>L&apos;enllaç s&apos;obrirà</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="49"/>
         <source>Mail app will open</source>
-        <translation>E-Mail-App wird geöffnet</translation>
+        <translation>L&apos;aplicació de correu electrònic s&apos;obrirà</translation>
     </message>
 </context>
 <context>
@@ -138,7 +130,7 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="58"/>
         <source>Uptime</source>
-        <translation>Betriebszeit</translation>
+        <translation>Temps en funcionament</translation>
     </message>
 </context>
 <context>
@@ -146,7 +138,7 @@
     <message>
         <location filename="../qml/pages/LicensePage.qml" line="21"/>
         <source>License</source>
-        <translation>Lizenz</translation>
+        <translation>Llicència</translation>
     </message>
 </context>
 <context>
@@ -154,17 +146,17 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="59"/>
         <source>Reboot</source>
-        <translation>Neu starten</translation>
+        <translation>Reinicia</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="76"/>
         <source>Shutdown</source>
-        <translation>Ausschalten</translation>
+        <translation>Apaga</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="112"/>
         <source>Uptime</source>
-        <translation>Betriebszeit</translation>
+        <translation>Temps en funcionament</translation>
     </message>
 </context>
 <context>
@@ -172,35 +164,36 @@
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="16"/>
         <source>Settings</source>
-        <translation>Einstellungen</translation>
+        <translation>Configuració</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="30"/>
         <source>Remorse timeout</source>
-        <translation>Timeout für den Remorse-Timer</translation>
+        <translation>Retard d&apos;apagament</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="40"/>
         <source>Off</source>
-        <translation>Aus</translation>
+        <translation>Apaga</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/pages/SettingsPage.qml" line="42"/>
         <source>%n second(s)</source>
         <translation>
-            <numerusform>%n Sekunde</numerusform>
-            <numerusform>%n Sekunden</numerusform>
+            <numerusform>%n segon</numerusform>
+            <numerusform>%n segons</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="20"/>
         <source>Custom colors</source>
-        <translation>Eigene Farben</translation>
+        <translation>Personalitza els colors</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="21"/>
         <source>Use custom colors for reboot and shutdown actions</source>
-        <translation>Eigene Farben für die Neustart- und Ausschaltaktionen benutzen</translation>
+        <translation>Personalitzeu els colors per les accions de reiniciar i apagar </translation>
     </message>
 </context>
 <context>
@@ -208,12 +201,12 @@
     <message>
         <location filename="../qml/harbour-sailfishreboot.qml" line="57"/>
         <source>Your device will shutdown</source>
-        <translation>Dein Gerät wird ausgeschaltet</translation>
+        <translation>El dispositiu s&apos;apagarà</translation>
     </message>
     <message>
         <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
         <source>Your device will reboot</source>
-        <translation>Dein Gerät wird neugestartet</translation>
+        <translation>El dispositiu es reiniciarà</translation>
     </message>
 </context>
 </TS>

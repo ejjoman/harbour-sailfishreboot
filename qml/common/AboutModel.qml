@@ -54,7 +54,7 @@ ListModel {
                         title: qsTr("Translation provided by"),
 
                         //: Insert the Name(s) of the translator(s) here
-                        subTitle: qsTrId("names-of-translators"),
+                        subTitle: qsTr("names-of-translators"),
                         group: qsTr("Translation")
                     },
                     {

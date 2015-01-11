@@ -45,4 +45,7 @@ HEADERS += \
 CONFIG += sailfishapp_i18n
 TRANSLATIONS += \
     translations/harbour-sailfishreboot-en.ts \
-    translations/harbour-sailfishreboot-de.ts
+    translations/harbour-sailfishreboot-de.ts \
+    translations/harbour-sailfishreboot-ca.ts \
+    translations/harbour-sailfishreboot-es.ts \
+    translations/harbour-sailfishreboot-gl_ES.ts
