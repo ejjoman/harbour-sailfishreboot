@@ -49,4 +49,5 @@ TRANSLATIONS += \
     translations/harbour-sailfishreboot-ca.ts \
     translations/harbour-sailfishreboot-es.ts \
     translations/harbour-sailfishreboot-gl_ES.ts \
-    translations/harbour-sailfishreboot-fi.ts
+    translations/harbour-sailfishreboot-fi.ts \
+    translations/harbour-sailfishreboot-da.ts
