@@ -43,7 +43,7 @@ BackgroundItem {
         Label {
             id: valueText
             width: parent.width
-            color: root.down ? secondaryHighlightColor : Theme.secondaryColor
+            color: root.down ? Theme.secondaryHighlightColor : Theme.secondaryColor
             truncationMode: TruncationMode.Elide
             maximumLineCount: 2
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
