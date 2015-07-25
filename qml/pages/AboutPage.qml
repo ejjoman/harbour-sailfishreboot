@@ -5,6 +5,8 @@ import "../common"
 Page {
     id: root
 
+    allowedOrientations: Orientation.All
+
     SilicaListView {
         id: listView
         anchors.fill: parent

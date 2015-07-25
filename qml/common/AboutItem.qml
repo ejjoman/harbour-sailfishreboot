@@ -21,7 +21,7 @@ BackgroundItem {
 
     Column {
         id: content
-        width: childrenRect.width
+        width: parent.width
 
         anchors {
             left: parent.left

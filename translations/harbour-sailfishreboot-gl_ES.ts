@@ -96,22 +96,22 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="16"/>
+        <location filename="../qml/pages/AboutPage.qml" line="18"/>
         <source>Settings</source>
         <translation>configuración </translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="26"/>
+        <location filename="../qml/pages/AboutPage.qml" line="28"/>
         <source>About SailfishReboot</source>
         <translation>Sobre SailfishReboot</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="46"/>
+        <location filename="../qml/pages/AboutPage.qml" line="48"/>
         <source>Link will open</source>
         <translation>Ligazón abrirase </translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="49"/>
+        <location filename="../qml/pages/AboutPage.qml" line="51"/>
         <source>Mail app will open</source>
         <translation>Aplicación de mail abrirase </translation>
     </message>
@@ -119,15 +119,14 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../qml/cover/CoverPage.qml" line="58"/>
         <source>Uptime</source>
-        <translation>Tempo acendido </translation>
+        <translation type="vanished">Tempo acendido </translation>
     </message>
 </context>
 <context>
     <name>LicensePage</name>
     <message>
-        <location filename="../qml/pages/LicensePage.qml" line="21"/>
+        <location filename="../qml/pages/LicensePage.qml" line="23"/>
         <source>License</source>
         <translation>Licencia </translation>
     </message>
@@ -145,7 +144,7 @@
         <translation>apagar </translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="112"/>
+        <location filename="../qml/pages/MainPage.qml" line="127"/>
         <source>Uptime</source>
         <translation>acendido </translation>
     </message>
@@ -153,22 +152,22 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="16"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="18"/>
         <source>Settings</source>
         <translation>configuración </translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="30"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="32"/>
         <source>Remorse timeout</source>
         <translation>tempo de retardo</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="40"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
         <source>Off</source>
         <translation>apagado </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="44"/>
         <source>%n second(s)</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -176,25 +175,23 @@
         </translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="20"/>
         <source>Custom colors</source>
-        <translation>Colores personalizados</translation>
+        <translation type="vanished">Colores personalizados</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="21"/>
         <source>Use custom colors for reboot and shutdown actions</source>
-        <translation>Usar colores personalizados pra as accións de reiniciado e apagado</translation>
+        <translation type="vanished">Usar colores personalizados pra as accións de reiniciado e apagado</translation>
     </message>
 </context>
 <context>
     <name>harbour-sailfishreboot</name>
     <message>
-        <location filename="../qml/harbour-sailfishreboot.qml" line="57"/>
+        <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
         <source>Your device will shutdown</source>
         <translation>Teu aparello apagarase </translation>
     </message>
     <message>
-        <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
+        <location filename="../qml/harbour-sailfishreboot.qml" line="70"/>
         <source>Your device will reboot</source>
         <translation>Teu aparello reiniciarase </translation>
     </message>

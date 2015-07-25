@@ -36,6 +36,8 @@ import "../Utils.js" as Utils
 CoverBackground {
     id: root
 
+    onStatusChanged: app._coverActive = status === Cover.Active
+
     Image {
         id: image
         y: Theme.paddingLarge
@@ -47,15 +49,15 @@ CoverBackground {
     Label {
         id: label
         anchors.centerIn: parent
-        width: parent.width - 2*Theme.paddingLarge
+        width: parent.width - 2*Theme.paddingMedium
         height: width
-        color: Theme.secondaryColor
+        color: Theme.highlightColor
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         wrapMode: Text.Wrap
         fontSizeMode: Text.Fit
 
-        text: "<b>" + qsTr("Uptime") + "</b><br/>" + bootTime.secondsSinceBoot.secondsToTimeString()
+        text: bootTime.secondsSinceBoot.secondsToTimeString()
     }
 
     CoverActionList {

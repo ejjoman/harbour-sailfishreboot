@@ -2,6 +2,8 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
+    allowedOrientations: Orientation.All
+
     SilicaFlickable {
         contentHeight: content.height
         anchors.fill: parent
@@ -16,15 +18,15 @@ Page {
                 title: qsTr("Settings")
             }
 
-            TextSwitch {
-                text: qsTr("Custom colors")
-                description: qsTr("Use custom colors for reboot and shutdown actions")
-                checked: settings.useColoredActions
+//            TextSwitch {
+//                text: qsTr("Custom colors")
+//                description: qsTr("Use custom colors for reboot and shutdown actions")
+//                checked: settings.useColoredActions
 
-                onCheckedChanged: {
-                    settings.useColoredActions = checked
-                }
-            }
+//                onCheckedChanged: {
+//                    settings.useColoredActions = checked
+//                }
+//            }
 
             Slider {
                 label: qsTr("Remorse timeout")

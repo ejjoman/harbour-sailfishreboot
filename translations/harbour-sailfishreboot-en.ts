@@ -96,38 +96,30 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="16"/>
+        <location filename="../qml/pages/AboutPage.qml" line="18"/>
         <source>Settings</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="26"/>
+        <location filename="../qml/pages/AboutPage.qml" line="28"/>
         <source>About SailfishReboot</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="46"/>
+        <location filename="../qml/pages/AboutPage.qml" line="48"/>
         <source>Link will open</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="49"/>
+        <location filename="../qml/pages/AboutPage.qml" line="51"/>
         <source>Mail app will open</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
-    <name>CoverPage</name>
-    <message>
-        <location filename="../qml/cover/CoverPage.qml" line="58"/>
-        <source>Uptime</source>
         <translation></translation>
     </message>
 </context>
 <context>
     <name>LicensePage</name>
     <message>
-        <location filename="../qml/pages/LicensePage.qml" line="21"/>
+        <location filename="../qml/pages/LicensePage.qml" line="23"/>
         <source>License</source>
         <translation></translation>
     </message>
@@ -137,48 +129,38 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="59"/>
         <source>Reboot</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="76"/>
         <source>Shutdown</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="112"/>
+        <location filename="../qml/pages/MainPage.qml" line="127"/>
         <source>Uptime</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="16"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="18"/>
         <source>Settings</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="20"/>
-        <source>Custom colors</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="21"/>
-        <source>Use custom colors for reboot and shutdown actions</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="30"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="32"/>
         <source>Remorse timeout</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="40"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
         <source>Off</source>
         <translation></translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="44"/>
         <source>%n second(s)</source>
         <translation>
             <numerusform>%n second</numerusform>
@@ -189,12 +171,12 @@
 <context>
     <name>harbour-sailfishreboot</name>
     <message>
-        <location filename="../qml/harbour-sailfishreboot.qml" line="57"/>
+        <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
         <source>Your device will shutdown</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
+        <location filename="../qml/harbour-sailfishreboot.qml" line="70"/>
         <source>Your device will reboot</source>
         <translation></translation>
     </message>

@@ -4,12 +4,12 @@ import harbour.sailfishreboot.Settings 1.0
 QtObject {
     id: root
 
-    property bool useColoredActions: true
+    //property bool useColoredActions: true
     property int remorseTimeOut: 5
 
     property bool _isInitializing: true
 
-    onUseColoredActionsChanged: _saveSetting('useColoredActions');
+    //onUseColoredActionsChanged: _saveSetting('useColoredActions');
     onRemorseTimeOutChanged: _saveSetting('remorseTimeOut');
 
     function _getSettings() {

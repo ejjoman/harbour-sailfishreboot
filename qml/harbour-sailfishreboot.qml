@@ -40,10 +40,17 @@ ApplicationWindow
 {
     id: app
 
+    allowedOrientations: Orientation.All
+
     property bool _isInitial: true
+    property MainPage mainPage
 
     initialPage: Component {
-        MainPage {}
+        MainPage {
+            id: mainPage
+
+            Component.onCompleted: app.mainPage = mainPage
+        }
     }
 
     cover: Component {
@@ -51,17 +58,18 @@ ApplicationWindow
     }
 
     property bool _coverActive: false
-    property bool _remorseTimerRunning: false
 
     function shutdown() {
-        remorsePopup.optionalExecute(qsTr("Your device will shutdown"), settings.remorseTimeOut * 1000, function() {
-            dsmeAdapter.shutdown();
+        mainPage.remorsePopup.optionalExecute(qsTr("Your device will shutdown"), settings.remorseTimeOut * 1000, function() {
+            //dsmeAdapter.shutdown();
+            Qt.quit();
         });
     }
 
     function reboot() {
-        remorsePopup.optionalExecute(qsTr("Your device will reboot"), settings.remorseTimeOut * 1000, function() {
-            dsmeAdapter.reboot();
+        mainPage.remorsePopup.optionalExecute(qsTr("Your device will reboot"), settings.remorseTimeOut * 1000, function() {
+            //dsmeAdapter.reboot();
+            Qt.quit();
         });
     }
 
@@ -73,30 +81,6 @@ ApplicationWindow
 
     Settings {
         id: settings
-    }
-
-    RemorsePopup {
-        id: remorsePopup
-
-        onCanceled: {
-            _remorseTimerRunning = false;
-        }
-
-        onTriggered: {
-            _remorseTimerRunning = false;
-        }
-
-        function optionalExecute(text, timeout, callback) {
-            if (timeout === 0) {
-                callback()
-            } else {
-                _remorseTimerRunning = true;
-
-                remorsePopup.execute(text, function() {
-                    callback();
-                }, timeout);
-            }
-        }
     }
 }
 

@@ -32,17 +32,17 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import harbour.sailfishreboot.BootTime 1.0
 import "../Utils.js" as Utils
+import "../common"
 
 Page {
     id: page
 
     allowedOrientations: Orientation.All
 
-    property color rebootColor: "#FFCC33"
-    property color shutdownColor: "#FF3D64" //"#FF0033"
-
     backNavigation: !app._remorseTimerRunning
     forwardNavigation: !app._remorseTimerRunning
+
+    property alias remorsePopup: remorsePopup
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
@@ -52,8 +52,8 @@ Page {
             id: pullDownMenu
             //enabled: !_remorseTimerRunning
             quickSelect: true
-            highlightColor: settings.useColoredActions ? rebootColor : Theme.highlightColor
-            backgroundColor: settings.useColoredActions ? rebootColor : Theme.highlightBackgroundColor
+            highlightColor: "#FFCC33" //settings.useColoredActions ? rebootColor : Theme.highlightColor
+            backgroundColor: "#FFCC33" // settings.useColoredActions ? rebootColor : Theme.highlightBackgroundColor
 
             MenuItem {
                 text: qsTr("Reboot")
@@ -67,8 +67,8 @@ Page {
             id: pushUpMenu
             //enabled: !_remorseTimerRunning
             quickSelect: true
-            highlightColor: settings.useColoredActions ? shutdownColor : Theme.highlightColor
-            backgroundColor: settings.useColoredActions ? shutdownColor : Theme.highlightBackgroundColor
+            highlightColor: "#FF0033" //settings.useColoredActions ? shutdownColor : Theme.highlightColor
+            backgroundColor: "#FF0033" //settings.useColoredActions ? shutdownColor : Theme.highlightBackgroundColor
 
             Item { height: Theme.itemSizeExtraSmall; width: parent.width }
 
@@ -81,6 +81,8 @@ Page {
         contentHeight: parent.height
 
         Image {
+            id: rebootImage
+
             anchors {
                 top: parent.top
                 topMargin: Theme.paddingLarge
@@ -90,45 +92,230 @@ Page {
             source: "image://theme/icon-l-redirect?" + pullDownMenu.highlightColor
         }
 
-        Column {
+        SplitPanel {
+            id: splitPanel
+            isHorizontal: page.orientation === Orientation.Landscape || page.orientation === Orientation.LandscapeInverted
+
+            //distance: isHorizontal ? .1 : .5
+
             anchors {
                 left: parent.left
                 right: parent.right
-                verticalCenter: parent.verticalCenter
+                top: rebootImage.bottom
+                bottom: shutdownImage.top
             }
 
-            Label {
+            leftTop: Column {
                 anchors {
                     left: parent.left
                     right: parent.right
+                    verticalCenter: parent.verticalCenter
                 }
-                font {
-                    pixelSize: Theme.fontSizeHuge
-                    family: Theme.fontFamilyHeading
+
+                Label {
+                    anchors {
+                        left: parent.left
+                        right: parent.right
+                    }
+                    font {
+                        pixelSize: Theme.fontSizeHuge
+                        family: Theme.fontFamilyHeading
+                    }
+                    color: Theme.secondaryColor
+                    wrapMode: Text.Wrap
+                    horizontalAlignment: Text.AlignHCenter
+                    text: qsTr("Uptime")
                 }
-                color: Theme.secondaryColor
-                wrapMode: Text.Wrap
-                horizontalAlignment: Text.AlignHCenter
-                text: qsTr("Uptime")
+
+                Label {
+                    anchors {
+                        left: parent.left
+                        right: parent.right
+                    }
+                    color: Theme.highlightColor
+                    font {
+                        pixelSize: Theme.fontSizeHuge
+                        family: Theme.fontFamilyHeading
+                    }
+
+                    horizontalAlignment: Text.AlignHCenter
+                    text: bootTime.secondsSinceBoot.secondsToTimeString()
+                }
             }
 
-            Label {
+            rightBottom: Column {
                 anchors {
                     left: parent.left
                     right: parent.right
-                }
-                color: Theme.highlightColor
-                font {
-                    pixelSize: Theme.fontSizeHuge
-                    family: Theme.fontFamilyHeading
+                    verticalCenter: parent.verticalCenter
                 }
 
-                horizontalAlignment: Text.AlignHCenter
-                text: bootTime.secondsSinceBoot.secondsToTimeString()
+                //                Label {
+                //                    id: headerText
+                //                    color: Theme.highlightColor
+                //                    anchors.horizontalCenter: parent.horizontalCenter
+
+                //                    font {
+                //                        pixelSize: Theme.fontSizeLarge
+                //                        family: Theme.fontFamilyHeading
+                //                    }
+
+                //                    text: "Highscores"
+                //                }
+
+                //                InfoLabel {
+                //                    text: "No Highscores available yet"
+                //                    font.pixelSize: Theme.fontSizeMedium
+                //                }
+
+                Repeater {
+                    model: 3
+
+                    delegate: Item {
+                        width: parent.width
+                        height: di.height + Theme.paddingSmall/2
+
+                        Item {
+                            width: parent.width
+                            height: di.height
+                            anchors.verticalCenter: parent.verticalCenter
+
+                            Item {
+                                width: parent.width - 2*Theme.paddingMedium
+                                height: parent.height
+
+                                anchors.horizontalCenter: parent.horizontalCenter
+                                opacity: .15
+
+                                OpacityRampEffect {
+                                    sourceItem: opacityRampWrapper
+                                    direction: OpacityRamp.LeftToRight
+                                    offset: 0.75
+                                    slope: 5
+                                }
+
+                                Item {
+                                    id: opacityRampWrapper
+
+                                    width: parent.width
+                                    height: parent.height
+
+                                    OpacityRampEffect {
+                                        sourceItem: background
+                                        direction: OpacityRamp.RightToLeft
+                                        offset: 0.75
+                                        slope: 5
+                                    }
+
+                                    Rectangle {
+                                        id: background
+
+                                        width: parent.width
+                                        height: parent.height
+
+                                        color: index % 2 == 0 ? Theme.primaryColor : Theme.secondaryColor
+                                    }
+                                }
+                            }
+
+                            ExtendedDetailItem {
+                                id: di
+                                label: "<img src='image://theme/icon-s-date?" + Theme.secondaryHighlightColor + "' /> Mo, 23.01.2015"
+                                value: "<img src='image://theme/icon-s-timer?" + Theme.highlightColor + "' /> 152d 20h 55m 59s"
+
+                                leftMargin: Theme.paddingSmall
+                                rightMargin: Theme.paddingSmall
+                            }
+                        }
+                    }
+                }
             }
         }
 
+
+
+
+
+        //        Drawer {
+
+        //        }
+
+
+
+        //        Column {
+        //            anchors {
+        //                top: rebootImage.bottom
+        //                bottom: shutdownImage.top
+        //                left: parent.left
+        //                right: parent.right
+        //            }
+
+        //            Column {
+        //                height: parent.height * .5
+        //                width: parent.width
+
+
+        //            }
+
+        //            Column {
+        //                height: parent.height * .5
+        //                width: parent.width
+
+        //                Column {
+        //                    anchors {
+        //                        left: parent.left
+        //                        right: parent.right
+        //                        centerIn: parent //.verticalCenter
+        //                    }
+
+        //                }
+
+
+        //            }
+        //        }
+
+        //        Column {
+        //            anchors {
+        //                left: parent.left
+        //                right: parent.right
+        //                verticalCenter: parent.verticalCenter
+        //            }
+
+        //            Label {
+        //                anchors {
+        //                    left: parent.left
+        //                    right: parent.right
+        //                }
+        //                font {
+        //                    pixelSize: Theme.fontSizeHuge
+        //                    family: Theme.fontFamilyHeading
+        //                }
+        //                color: Theme.secondaryColor
+        //                wrapMode: Text.Wrap
+        //                horizontalAlignment: Text.AlignHCenter
+        //                text: qsTr("Uptime")
+        //            }
+
+        //            Label {
+        //                anchors {
+        //                    left: parent.left
+        //                    right: parent.right
+        //                }
+        //                color: Theme.highlightColor
+        //                font {
+        //                    pixelSize: Theme.fontSizeHuge
+        //                    family: Theme.fontFamilyHeading
+        //                }
+
+        //                horizontalAlignment: Text.AlignHCenter
+        //                text: bootTime.secondsSinceBoot.secondsToTimeString()
+        //            }
+        //        }
+
+
+
         Image {
+            id: shutdownImage
             anchors {
                 bottom: parent.bottom
                 bottomMargin: Theme.paddingLarge
@@ -143,6 +330,33 @@ Page {
         if (status === PageStatus.Active && app._isInitial) {
             app._isInitial = false;
             pageStack.pushAttached(Qt.resolvedUrl("AboutPage.qml"))
+        }
+    }
+
+    RemorsePopup {
+        id: remorsePopup
+
+        readonly property bool isRunning: _isRunning
+        property bool _isRunning: false
+
+        onCanceled: {
+            _isRunning = false;
+        }
+
+        onTriggered: {
+            _isRunning = false;
+        }
+
+        function optionalExecute(text, timeout, callback) {
+            if (timeout === 0) {
+                callback()
+            } else {
+                _isRunning = true;
+
+                remorsePopup.execute(text, function() {
+                    callback();
+                }, timeout);
+            }
         }
     }
 }

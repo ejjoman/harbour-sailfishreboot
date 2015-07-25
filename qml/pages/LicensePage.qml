@@ -4,6 +4,8 @@ import Sailfish.Silica 1.0
 Page {
     id: root
 
+    allowedOrientations: Orientation.All
+
     SilicaFlickable {
         clip: true
         contentHeight: column.height

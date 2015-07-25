@@ -73,6 +73,8 @@ int main(int argc, char *argv[])
     QQmlContext *context = view->rootContext();
     context->setContextProperty("dsmeAdapter", new DsmeQmlAdapter());
 
+    QObject::connect((QObject*)view->engine(), SIGNAL(quit()), app, SLOT(quit()));
+
     view->show();
 
     return app->exec();

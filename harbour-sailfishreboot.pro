@@ -32,7 +32,9 @@ OTHER_FILES += \
     rpm/harbour-sailfishreboot.yaml \
     harbour-sailfishreboot.desktop \
     qml/common/Settings.qml \
-    qml/pages/SettingsPage.qml
+    qml/pages/SettingsPage.qml \
+    qml/common/SplitPanel.qml \
+    qml/common/ExtendedDetailItem.qml
 
 
 HEADERS += \
