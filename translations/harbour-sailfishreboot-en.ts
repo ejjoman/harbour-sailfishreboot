@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="en">
+<TS version="2.1">
 <context>
     <name>AboutModel</name>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="9"/>
         <source>Project Home</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="10"/>
         <source>on GitHub</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="11"/>
         <location filename="../qml/common/AboutModel.qml" line="17"/>
         <location filename="../qml/common/AboutModel.qml" line="23"/>
         <source>Project</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="15"/>
         <source>License</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="21"/>
         <source>Report a bug or send a feature request</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="22"/>
         <source>on GitHub Issues</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="27"/>
@@ -42,55 +42,49 @@
         <location filename="../qml/common/AboutModel.qml" line="44"/>
         <location filename="../qml/common/AboutModel.qml" line="50"/>
         <source>Author</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="36"/>
         <source>Twitter</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="42"/>
         <location filename="../qml/common/AboutModel.qml" line="48"/>
         <source>Donate</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="43"/>
         <source>via PayPal</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="49"/>
         <source>via Flattr</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="54"/>
-        <source>Translation provided by</source>
-        <translation></translation>
+        <source>Translations provided by</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="57"/>
-        <source>names-of-translators</source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation>Michael Neufing</translation>
-    </message>
-    <message>
-        <location filename="../qml/common/AboutModel.qml" line="62"/>
-        <source>on translate.neufing.org</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../qml/common/AboutModel.qml" line="58"/>
-        <location filename="../qml/common/AboutModel.qml" line="63"/>
+        <location filename="../qml/common/AboutModel.qml" line="55"/>
+        <location filename="../qml/common/AboutModel.qml" line="68"/>
         <source>Translation</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="61"/>
+        <location filename="../qml/common/AboutModel.qml" line="66"/>
         <source>Translate this app</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/AboutModel.qml" line="67"/>
+        <source>on Transifex</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -98,22 +92,22 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="18"/>
         <source>Settings</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="28"/>
         <source>About SailfishReboot</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="48"/>
+        <location filename="../qml/pages/AboutPage.qml" line="73"/>
         <source>Link will open</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="51"/>
+        <location filename="../qml/pages/AboutPage.qml" line="76"/>
         <source>Mail app will open</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -121,7 +115,7 @@
     <message>
         <location filename="../qml/pages/LicensePage.qml" line="23"/>
         <source>License</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -132,12 +126,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="76"/>
+        <location filename="../qml/pages/MainPage.qml" line="85"/>
         <source>Shutdown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="127"/>
+        <location filename="../qml/pages/MainPage.qml" line="136"/>
         <source>Uptime</source>
         <translation type="unfinished"></translation>
     </message>
@@ -147,24 +141,23 @@
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="18"/>
         <source>Settings</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="32"/>
         <source>Remorse timeout</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="42"/>
         <source>Off</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/pages/SettingsPage.qml" line="44"/>
         <source>%n second(s)</source>
-        <translation>
-            <numerusform>%n second</numerusform>
-            <numerusform>%n seconds</numerusform>
+        <translation type="unfinished">
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -173,12 +166,12 @@
     <message>
         <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
         <source>Your device will shutdown</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/harbour-sailfishreboot.qml" line="70"/>
         <source>Your device will reboot</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

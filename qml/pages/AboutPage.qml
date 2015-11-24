@@ -28,9 +28,34 @@ Page {
             title: qsTr("About SailfishReboot")
         }
 
-        delegate: AboutItem {
-            label: model.title
-            value: model.subTitle
+        delegate: Loader {
+            width: parent.width
+
+            property QtObject m: model
+            sourceComponent: model.list ? aboutListComponent : aboutItemComponent
+        }
+
+        section.property: "group"
+        section.criteria: ViewSection.FullString
+        section.delegate: SectionHeader { text: section }
+
+        VerticalScrollDecorator {}
+    }
+
+    Component {
+        id: settingsPage
+
+        SettingsPage {
+            parent: root
+        }
+    }
+
+    Component {
+        id: aboutItemComponent
+
+        AboutItem {
+            label: m.title
+            value: m.subTitle
 
             function doAction() {
                 if (!!model.pageFile)
@@ -65,19 +90,24 @@ Page {
                 }
             }
         }
-
-        section.property: "group"
-        section.criteria: ViewSection.FullString
-        section.delegate: SectionHeader { text: section }
-
-        VerticalScrollDecorator {}
     }
 
     Component {
-        id: settingsPage
+        id: aboutListComponent
 
-        SettingsPage {
-            parent: root
+        Column {
+            width: parent.width
+
+            Repeater {
+                model: m.list
+
+                delegate: DetailItem {
+                    label: model.name
+                    value: model.value
+                }
+            }
         }
+
+
     }
 }

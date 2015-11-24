@@ -67,29 +67,23 @@
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="54"/>
-        <source>Translation provided by</source>
+        <source>Translations provided by</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="57"/>
-        <source>names-of-translators</source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
+        <location filename="../qml/common/AboutModel.qml" line="67"/>
+        <source>on Transifex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="58"/>
-        <location filename="../qml/common/AboutModel.qml" line="63"/>
+        <location filename="../qml/common/AboutModel.qml" line="55"/>
+        <location filename="../qml/common/AboutModel.qml" line="68"/>
         <source>Translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="61"/>
+        <location filename="../qml/common/AboutModel.qml" line="66"/>
         <source>Translate this app</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/common/AboutModel.qml" line="62"/>
-        <source>on translate.neufing.org</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -106,12 +100,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="48"/>
+        <location filename="../qml/pages/AboutPage.qml" line="73"/>
         <source>Link will open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="51"/>
+        <location filename="../qml/pages/AboutPage.qml" line="76"/>
         <source>Mail app will open</source>
         <translation type="unfinished"></translation>
     </message>
@@ -132,12 +126,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="76"/>
+        <location filename="../qml/pages/MainPage.qml" line="85"/>
         <source>Shutdown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="127"/>
+        <location filename="../qml/pages/MainPage.qml" line="136"/>
         <source>Uptime</source>
         <translation type="unfinished"></translation>
     </message>

@@ -67,28 +67,22 @@
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="54"/>
-        <source>Translation provided by</source>
-        <translation>Traduït per</translation>
-    </message>
-    <message>
-        <location filename="../qml/common/AboutModel.qml" line="57"/>
-        <source>names-of-translators</source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
+        <source>Translations provided by</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="62"/>
-        <source>on translate.neufing.org</source>
+        <location filename="../qml/common/AboutModel.qml" line="67"/>
+        <source>on Transifex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="58"/>
-        <location filename="../qml/common/AboutModel.qml" line="63"/>
+        <location filename="../qml/common/AboutModel.qml" line="55"/>
+        <location filename="../qml/common/AboutModel.qml" line="68"/>
         <source>Translation</source>
         <translation>Traducció</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="61"/>
+        <location filename="../qml/common/AboutModel.qml" line="66"/>
         <source>Translate this app</source>
         <translation>Traduïu aquesta aplicació</translation>
     </message>
@@ -106,21 +100,14 @@
         <translation>Quant a SailfishReboot</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="48"/>
+        <location filename="../qml/pages/AboutPage.qml" line="73"/>
         <source>Link will open</source>
         <translation>L&apos;enllaç s&apos;obrirà</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="51"/>
+        <location filename="../qml/pages/AboutPage.qml" line="76"/>
         <source>Mail app will open</source>
         <translation>L&apos;aplicació de correu electrònic s&apos;obrirà</translation>
-    </message>
-</context>
-<context>
-    <name>CoverPage</name>
-    <message>
-        <source>Uptime</source>
-        <translation type="vanished">Temps en funcionament</translation>
     </message>
 </context>
 <context>
@@ -139,12 +126,12 @@
         <translation>Reinicia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="76"/>
+        <location filename="../qml/pages/MainPage.qml" line="85"/>
         <source>Shutdown</source>
         <translation>Apaga</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="127"/>
+        <location filename="../qml/pages/MainPage.qml" line="136"/>
         <source>Uptime</source>
         <translation>Temps en funcionament</translation>
     </message>
@@ -174,14 +161,6 @@
             <numerusform>%n segons</numerusform>
             <numerusform></numerusform>
         </translation>
-    </message>
-    <message>
-        <source>Custom colors</source>
-        <translation type="vanished">Personalitza els colors</translation>
-    </message>
-    <message>
-        <source>Use custom colors for reboot and shutdown actions</source>
-        <translation type="vanished">Personalitzeu els colors per les accions de reiniciar i apagar </translation>
     </message>
 </context>
 <context>

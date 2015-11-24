@@ -51,17 +51,22 @@ ListModel {
                         url: "https://flattr.com/submit/auto?user_id=ejjoman&url=https%3A%2F%2Fgithub.com%2Fejjoman%2Fharbour-sailfishreboot"
                     },
                     {
-                        title: qsTr("Translation provided by"),
-
-                        //: Insert the Name(s) of the translator(s) here
-                        subTitle: qsTr("names-of-translators"),
-                        group: qsTr("Translation")
+                        title: qsTr("Translations provided by"),
+                        group: qsTr("Translation"),
+                        list: [
+                            {name: "Pasi", value: "German"},
+                            {name: "Michael Neufing", value: "German, English"},
+                            {name: "Agustí Clara", value: "Catalan"},
+                            {name: "javier", value: "Galcian, Spanish"},
+                            {name: "Watchmaker", value: "Italian"},
+                            {name: "Carmen Fernández B.", value: "Spanish"}
+                        ]
                     },
                     {
                         title: qsTr("Translate this app"),
-                        subTitle: qsTr("on translate.neufing.org"),
+                        subTitle: qsTr("on Transifex"),
                         group: qsTr("Translation"),
-                        url: "https://translate.neufing.org/projects/sailfishreboot/sailfishreboot-app/"
+                        url: "https://www.transifex.com/ejjoman/harbour-sailfishreboot/"
                     }
                 ]
 
