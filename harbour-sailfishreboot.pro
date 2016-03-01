@@ -34,11 +34,12 @@ OTHER_FILES += \
     qml/common/Settings.qml \
     qml/pages/SettingsPage.qml
 
-
 HEADERS += \
     src/systemboottime.h \
     src/dsmeqmladapter.h \
     src/qmlsettings.h
+
+SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
 
 # to disable building translations every time, comment out the
 # following CONFIG line

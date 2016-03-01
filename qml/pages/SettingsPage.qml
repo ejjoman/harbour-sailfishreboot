@@ -2,6 +2,8 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
+    id: root
+
     SilicaFlickable {
         contentHeight: content.height
         anchors.fill: parent
@@ -30,7 +32,7 @@ Page {
                 label: qsTr("Remorse timeout")
                 maximumValue: 10
                 minimumValue: 0
-                value: settings.remorseTimeOut
+                value: settings.remorseTimeout
                 stepSize: 1.0
 
                 width: parent.width
@@ -43,7 +45,7 @@ Page {
                 }
 
                 onValueChanged: {
-                    settings.remorseTimeOut = value
+                    settings.remorseTimeout = value
                 }
             }
         }

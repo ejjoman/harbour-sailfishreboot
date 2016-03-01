@@ -34,15 +34,25 @@ import harbour.sailfishreboot.BootTime 1.0
 import "../Utils.js" as Utils
 
 Page {
-    id: page
+    id: root
 
-    allowedOrientations: Orientation.All
+    readonly property color rebootColor: "#FFCC33"
+    readonly property color shutdownColor: "#FF3D64" //"#FF0033"
 
-    property color rebootColor: "#FFCC33"
-    property color shutdownColor: "#FF3D64" //"#FF0033"
+    backNavigation: !_remorseTimerRunning
+    forwardNavigation: !_remorseTimerRunning
 
-    backNavigation: !app._remorseTimerRunning
-    forwardNavigation: !app._remorseTimerRunning
+    function shutdown() {
+        remorsePopup.optionalExecute(qsTr("Your device will shutdown"), function() {
+            dsmeAdapter.shutdown();
+        }, settings.remorseTimeout * 1000);
+    }
+
+    function reboot() {
+        remorsePopup.optionalExecute(qsTr("Your device will reboot"), function() {
+            dsmeAdapter.reboot();
+        }, settings.remorseTimeout * 1000);
+    }
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
@@ -57,7 +67,10 @@ Page {
 
             MenuItem {
                 text: qsTr("Reboot")
-                onClicked: app.reboot()
+                color: settings.useColoredActions ? (down || highlighted ? Theme.primaryColor : rebootColor)
+                                                  : (down || highlighted ? Theme.primaryColor : Theme.primaryColor)
+
+                onClicked: reboot()
             }
 
             Item { height: Theme.itemSizeExtraSmall; width: parent.width }
@@ -74,7 +87,10 @@ Page {
 
             MenuItem {
                 text: qsTr("Shutdown")
-                onClicked: app.shutdown()
+                color: settings.useColoredActions ? (down || highlighted ? Theme.primaryColor : shutdownColor)
+                                                  : (down || highlighted ? Theme.primaryColor : Theme.primaryColor)
+
+                onClicked: shutdown()
             }
         }
 
@@ -136,6 +152,29 @@ Page {
             }
 
             source: "image://theme/icon-l-power?" + pushUpMenu.highlightColor
+        }
+    }
+
+    property bool _remorseTimerRunning: false
+
+    RemorsePopup {
+        id: remorsePopup
+
+        onCanceled: {
+            _remorseTimerRunning = false;
+        }
+
+        onTriggered: {
+            _remorseTimerRunning = false;
+        }
+
+        function optionalExecute(text, callback, timeout) {
+            if (timeout === 0) {
+                callback()
+            } else {
+                _remorseTimerRunning = true;
+                remorsePopup.execute(text, callback, timeout);
+            }
         }
     }
 

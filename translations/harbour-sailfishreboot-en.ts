@@ -135,17 +135,27 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="59"/>
+        <location filename="../qml/pages/MainPage.qml" line="46"/>
+        <source>Your device will shutdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="52"/>
+        <source>Your device will reboot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="69"/>
         <source>Reboot</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="76"/>
+        <location filename="../qml/pages/MainPage.qml" line="89"/>
         <source>Shutdown</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="112"/>
+        <location filename="../qml/pages/MainPage.qml" line="128"/>
         <source>Uptime</source>
         <translation></translation>
     </message>
@@ -153,50 +163,37 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="16"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="18"/>
         <source>Settings</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="20"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="22"/>
         <source>Custom colors</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="21"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="23"/>
         <source>Use custom colors for reboot and shutdown actions</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="30"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="32"/>
         <source>Remorse timeout</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="40"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
         <source>Off</source>
         <translation></translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="44"/>
         <source>%n second(s)</source>
         <translation>
             <numerusform>%n second</numerusform>
             <numerusform>%n seconds</numerusform>
         </translation>
-    </message>
-</context>
-<context>
-    <name>harbour-sailfishreboot</name>
-    <message>
-        <location filename="../qml/harbour-sailfishreboot.qml" line="57"/>
-        <source>Your device will shutdown</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
-        <source>Your device will reboot</source>
-        <translation></translation>
     </message>
 </context>
 </TS>

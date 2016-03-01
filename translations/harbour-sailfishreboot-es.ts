@@ -135,17 +135,27 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="59"/>
+        <location filename="../qml/pages/MainPage.qml" line="46"/>
+        <source>Your device will shutdown</source>
+        <translation type="unfinished">Tu dispositivo se apagará</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="52"/>
+        <source>Your device will reboot</source>
+        <translation type="unfinished">Tu dispositivo se reiniciara</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="69"/>
         <source>Reboot</source>
         <translation>Reiniciar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="76"/>
+        <location filename="../qml/pages/MainPage.qml" line="89"/>
         <source>Shutdown</source>
         <translation>Apagar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="112"/>
+        <location filename="../qml/pages/MainPage.qml" line="128"/>
         <source>Uptime</source>
         <translation>Tiempo en actividad</translation>
     </message>
@@ -153,22 +163,22 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="16"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="18"/>
         <source>Settings</source>
         <translation>Ajustes</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="30"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="32"/>
         <source>Remorse timeout</source>
         <translation>Tiempo de retardo</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="40"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
         <source>Off</source>
         <translation>Apagado</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="44"/>
         <source>%n second(s)</source>
         <translation>
             <numerusform>%n segundo</numerusform>
@@ -176,27 +186,14 @@
         </translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="20"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="22"/>
         <source>Custom colors</source>
         <translation>Colores personalizados</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="21"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="23"/>
         <source>Use custom colors for reboot and shutdown actions</source>
         <translation>Usar colores personalizados para las acciones de reiniciar y apagar</translation>
-    </message>
-</context>
-<context>
-    <name>harbour-sailfishreboot</name>
-    <message>
-        <location filename="../qml/harbour-sailfishreboot.qml" line="57"/>
-        <source>Your device will shutdown</source>
-        <translation>Tu dispositivo se apagará</translation>
-    </message>
-    <message>
-        <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
-        <source>Your device will reboot</source>
-        <translation>Tu dispositivo se reiniciara</translation>
     </message>
 </context>
 </TS>

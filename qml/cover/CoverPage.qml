@@ -66,7 +66,7 @@ CoverBackground {
             iconSource: "image://theme/icon-cover-refresh"
             onTriggered: {
                 app.activate();
-                app.reboot();
+                mainPage.reboot();
             }
         }
 
@@ -75,7 +75,7 @@ CoverBackground {
             iconSource: "image://theme/icon-cover-cancel"
             onTriggered: {
                 app.activate();
-                app.shutdown();
+                mainPage.shutdown();
             }
         }
     }

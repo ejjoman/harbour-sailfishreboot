@@ -40,63 +40,36 @@ ApplicationWindow
 {
     id: app
 
+    allowedOrientations: Orientation.All
+    _defaultPageOrientations: Orientation.All
+
     property bool _isInitial: true
+    property MainPage mainPage
 
     initialPage: Component {
-        MainPage {}
+        MainPage {
+            id: mainPage
+
+            Component.onCompleted: app.mainPage = mainPage
+        }
     }
 
     cover: Component {
-        CoverPage {}
+        CoverPage {
+            onStatusChanged: _coverActive = status == Cover.Active
+        }
     }
 
     property bool _coverActive: false
-    property bool _remorseTimerRunning: false
-
-    function shutdown() {
-        remorsePopup.optionalExecute(qsTr("Your device will shutdown"), settings.remorseTimeOut * 1000, function() {
-            dsmeAdapter.shutdown();
-        });
-    }
-
-    function reboot() {
-        remorsePopup.optionalExecute(qsTr("Your device will reboot"), settings.remorseTimeOut * 1000, function() {
-            dsmeAdapter.reboot();
-        });
-    }
 
     BootTime {
         id: bootTime
         autoUpdate: app.applicationActive || _coverActive //coverPage.status == Cover.Active
-        updateInterval: 200
+        updateInterval: 1000
     }
 
     Settings {
         id: settings
-    }
-
-    RemorsePopup {
-        id: remorsePopup
-
-        onCanceled: {
-            _remorseTimerRunning = false;
-        }
-
-        onTriggered: {
-            _remorseTimerRunning = false;
-        }
-
-        function optionalExecute(text, timeout, callback) {
-            if (timeout === 0) {
-                callback()
-            } else {
-                _remorseTimerRunning = true;
-
-                remorsePopup.execute(text, function() {
-                    callback();
-                }, timeout);
-            }
-        }
     }
 }
 
