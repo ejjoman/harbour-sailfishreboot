@@ -4,7 +4,8 @@ ListModel {
     id: model
 
     Component.onCompleted: {
-        var items = [
+        var items =
+                [
                     {
                         title: qsTr("Project Home"),
                         subTitle: qsTr("on GitHub"),
@@ -51,18 +52,16 @@ ListModel {
                         url: "https://flattr.com/submit/auto?user_id=ejjoman&url=https%3A%2F%2Fgithub.com%2Fejjoman%2Fharbour-sailfishreboot"
                     },
                     {
-                        title: qsTr("Translation provided by"),
-
-                        //: Insert the Name(s) of the translator(s) here
-                        subTitle: qsTr("names-of-translators"),
+                        title: qsTr("Translate this app (coming soon ™)"),
+                        subTitle: qsTr("Translation service will be available soon ™"),
                         group: qsTr("Translation")
-                    },
+                    }/*,
                     {
                         title: qsTr("Translate this app"),
                         subTitle: qsTr("on translate.neufing.org"),
                         group: qsTr("Translation"),
                         url: "https://translate.neufing.org/projects/sailfishreboot/sailfishreboot-app/"
-                    }
+                    }*/
                 ]
 
         for (var item in items) {

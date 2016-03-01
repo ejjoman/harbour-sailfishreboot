@@ -67,29 +67,17 @@
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="54"/>
-        <source>Translation provided by</source>
+        <source>Translate this app (coming soon ™)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="57"/>
-        <source>names-of-translators</source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
+        <location filename="../qml/common/AboutModel.qml" line="55"/>
+        <source>Translation service will come soon ™</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="58"/>
-        <location filename="../qml/common/AboutModel.qml" line="63"/>
+        <location filename="../qml/common/AboutModel.qml" line="56"/>
         <source>Translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/common/AboutModel.qml" line="61"/>
-        <source>Translate this app</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/common/AboutModel.qml" line="62"/>
-        <source>on translate.neufing.org</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
