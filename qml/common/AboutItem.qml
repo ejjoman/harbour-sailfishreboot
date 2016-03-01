@@ -26,8 +26,8 @@ BackgroundItem {
         anchors {
             left: parent.left
             right: parent.right
-            leftMargin: Theme.paddingLarge
-            rightMargin: Theme.paddingLarge
+            leftMargin: Theme.horizontalPageMargin
+            rightMargin: Theme.horizontalPageMargin
             verticalCenter: parent.verticalCenter
         }
 

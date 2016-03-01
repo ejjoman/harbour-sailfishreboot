@@ -4,79 +4,79 @@
 <context>
     <name>AboutModel</name>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="9"/>
+        <location filename="../qml/common/AboutModel.qml" line="10"/>
         <source>Project Home</source>
         <translation>Pàgina del projecte</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="10"/>
+        <location filename="../qml/common/AboutModel.qml" line="11"/>
         <source>on GitHub</source>
         <translation>a GitHub</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="11"/>
-        <location filename="../qml/common/AboutModel.qml" line="17"/>
-        <location filename="../qml/common/AboutModel.qml" line="23"/>
+        <location filename="../qml/common/AboutModel.qml" line="12"/>
+        <location filename="../qml/common/AboutModel.qml" line="18"/>
+        <location filename="../qml/common/AboutModel.qml" line="24"/>
         <source>Project</source>
         <translation>Projecte</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="15"/>
+        <location filename="../qml/common/AboutModel.qml" line="16"/>
         <source>License</source>
         <translation>Llicència</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="21"/>
+        <location filename="../qml/common/AboutModel.qml" line="22"/>
         <source>Report a bug or send a feature request</source>
         <translation>Informeu d&apos;errors o sol·liciteu millores</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="22"/>
+        <location filename="../qml/common/AboutModel.qml" line="23"/>
         <source>on GitHub Issues</source>
         <translation>a les incidències de GitHub</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="27"/>
-        <location filename="../qml/common/AboutModel.qml" line="29"/>
-        <location filename="../qml/common/AboutModel.qml" line="38"/>
-        <location filename="../qml/common/AboutModel.qml" line="44"/>
-        <location filename="../qml/common/AboutModel.qml" line="50"/>
+        <location filename="../qml/common/AboutModel.qml" line="28"/>
+        <location filename="../qml/common/AboutModel.qml" line="30"/>
+        <location filename="../qml/common/AboutModel.qml" line="39"/>
+        <location filename="../qml/common/AboutModel.qml" line="45"/>
+        <location filename="../qml/common/AboutModel.qml" line="51"/>
         <source>Author</source>
         <translation>Autor</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="36"/>
+        <location filename="../qml/common/AboutModel.qml" line="37"/>
         <source>Twitter</source>
         <translation>Twitter</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="42"/>
-        <location filename="../qml/common/AboutModel.qml" line="48"/>
+        <location filename="../qml/common/AboutModel.qml" line="43"/>
+        <location filename="../qml/common/AboutModel.qml" line="49"/>
         <source>Donate</source>
         <translation>Feu una donació</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="43"/>
+        <location filename="../qml/common/AboutModel.qml" line="44"/>
         <source>via PayPal</source>
         <translation>via PayPal</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="49"/>
+        <location filename="../qml/common/AboutModel.qml" line="50"/>
         <source>via Flattr</source>
         <translation>via Flattr</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="54"/>
+        <location filename="../qml/common/AboutModel.qml" line="55"/>
         <source>Translate this app (coming soon ™)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="55"/>
-        <source>Translation service will come soon ™</source>
+        <location filename="../qml/common/AboutModel.qml" line="56"/>
+        <source>Translation service will be available soon ™</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="56"/>
+        <location filename="../qml/common/AboutModel.qml" line="57"/>
         <source>Translation</source>
         <translation type="unfinished"></translation>
     </message>
