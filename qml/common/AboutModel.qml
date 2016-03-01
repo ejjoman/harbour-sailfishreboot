@@ -49,7 +49,7 @@ ListModel {
                         title: qsTr("Donate"),
                         subTitle: qsTr("via Flattr"),
                         group: qsTr("Author"),
-                        url: "https://flattr.com/submit/auto?user_id=ejjoman&url=https%3A%2F%2Fgithub.com%2Fejjoman%2Fharbour-sailfishreboot"
+                        url: "https://flattr.com/submit/auto?fid=doxzvd&url=https%3A%2F%2Fgithub.com%2Fejjoman%2F"
                     },
                     {
                         title: qsTr("Translate this app (coming soon ™)"),
