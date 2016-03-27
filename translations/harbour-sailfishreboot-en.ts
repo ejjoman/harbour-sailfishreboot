@@ -67,12 +67,12 @@
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="55"/>
-        <source>Translate this app (coming soon ™)</source>
+        <source>Translate this app</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="56"/>
-        <source>Translation service will be available soon ™</source>
+        <source>on translate.neufing.org</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
