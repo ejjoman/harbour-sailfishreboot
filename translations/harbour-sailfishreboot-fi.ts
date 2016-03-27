@@ -4,93 +4,81 @@
 <context>
     <name>AboutModel</name>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="9"/>
+        <location filename="../qml/common/AboutModel.qml" line="10"/>
         <source>Project Home</source>
         <translation>Projektin koti</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="10"/>
+        <location filename="../qml/common/AboutModel.qml" line="11"/>
         <source>on GitHub</source>
         <translation>Githubissa</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="11"/>
-        <location filename="../qml/common/AboutModel.qml" line="17"/>
-        <location filename="../qml/common/AboutModel.qml" line="23"/>
+        <location filename="../qml/common/AboutModel.qml" line="12"/>
+        <location filename="../qml/common/AboutModel.qml" line="18"/>
+        <location filename="../qml/common/AboutModel.qml" line="24"/>
         <source>Project</source>
         <translation>Projekti</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="15"/>
+        <location filename="../qml/common/AboutModel.qml" line="16"/>
         <source>License</source>
         <translation>Lisenssi</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="21"/>
+        <location filename="../qml/common/AboutModel.qml" line="22"/>
         <source>Report a bug or send a feature request</source>
         <translation>Ilmoita bugista - tai lähetä kehitysidea</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="22"/>
+        <location filename="../qml/common/AboutModel.qml" line="23"/>
         <source>on GitHub Issues</source>
         <translation>Githubissa</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="27"/>
-        <location filename="../qml/common/AboutModel.qml" line="29"/>
-        <location filename="../qml/common/AboutModel.qml" line="38"/>
-        <location filename="../qml/common/AboutModel.qml" line="44"/>
-        <location filename="../qml/common/AboutModel.qml" line="50"/>
+        <location filename="../qml/common/AboutModel.qml" line="28"/>
+        <location filename="../qml/common/AboutModel.qml" line="30"/>
+        <location filename="../qml/common/AboutModel.qml" line="39"/>
+        <location filename="../qml/common/AboutModel.qml" line="45"/>
+        <location filename="../qml/common/AboutModel.qml" line="51"/>
         <source>Author</source>
         <translation>Kehittäjä</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="36"/>
+        <location filename="../qml/common/AboutModel.qml" line="37"/>
         <source>Twitter</source>
         <translation>Twitter</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="42"/>
-        <location filename="../qml/common/AboutModel.qml" line="48"/>
+        <location filename="../qml/common/AboutModel.qml" line="43"/>
+        <location filename="../qml/common/AboutModel.qml" line="49"/>
         <source>Donate</source>
         <translation>Lahjoita</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="43"/>
+        <location filename="../qml/common/AboutModel.qml" line="44"/>
         <source>via PayPal</source>
         <translation>Paypalin kautta</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="49"/>
+        <location filename="../qml/common/AboutModel.qml" line="50"/>
         <source>via Flattr</source>
         <translation>Flattrin kautta</translation>
     </message>
     <message>
-        <location filename="../qml/common/AboutModel.qml" line="54"/>
-        <source>Translation provided by</source>
-        <translation>Kääntäjä/t</translation>
+        <location filename="../qml/common/AboutModel.qml" line="55"/>
+        <source>Translate this app (coming soon ™)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/common/AboutModel.qml" line="56"/>
+        <source>Translation service will be available soon ™</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="57"/>
-        <source>names-of-translators</source>
-        <extracomment>Insert the Name(s) of the translator(s) here</extracomment>
-        <translation>Tatu Hammarén @tathhu</translation>
-    </message>
-    <message>
-        <location filename="../qml/common/AboutModel.qml" line="58"/>
-        <location filename="../qml/common/AboutModel.qml" line="63"/>
         <source>Translation</source>
         <translation>Käännökset</translation>
-    </message>
-    <message>
-        <location filename="../qml/common/AboutModel.qml" line="61"/>
-        <source>Translate this app</source>
-        <translation>Käännä tämä sovellus</translation>
-    </message>
-    <message>
-        <location filename="../qml/common/AboutModel.qml" line="62"/>
-        <source>on translate.neufing.org</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -135,17 +123,27 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="59"/>
+        <location filename="../qml/pages/MainPage.qml" line="46"/>
+        <source>Your device will shutdown</source>
+        <translation type="unfinished">Laitteesi sulkeutuu</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="52"/>
+        <source>Your device will reboot</source>
+        <translation type="unfinished">Laitteesi käynnistyy uudelleen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/MainPage.qml" line="69"/>
         <source>Reboot</source>
         <translation>Käynnistä uudelleen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="76"/>
+        <location filename="../qml/pages/MainPage.qml" line="89"/>
         <source>Shutdown</source>
         <translation>Sammuta</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="112"/>
+        <location filename="../qml/pages/MainPage.qml" line="128"/>
         <source>Uptime</source>
         <translation>Ilman uudelleenkäynnistystä</translation>
     </message>
@@ -153,49 +151,36 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="16"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="18"/>
         <source>Settings</source>
         <translation>Asetukset</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="20"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="22"/>
         <source>Custom colors</source>
         <translation>Eri värit</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="21"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="23"/>
         <source>Use custom colors for reboot and shutdown actions</source>
         <translation>Käytä eri värejä uudelleenkäynnistykselle ja sammutukselle</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="30"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="32"/>
         <source>Remorse timeout</source>
         <translation>Katumusaika</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="40"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
         <source>Off</source>
         <translation>Pois</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/SettingsPage.qml" line="42"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="44"/>
         <source>%n second(s)</source>
-        <translation type="%n sekunti(a)">
+        <translation>
             <numerusform></numerusform>
         </translation>
-    </message>
-</context>
-<context>
-    <name>harbour-sailfishreboot</name>
-    <message>
-        <location filename="../qml/harbour-sailfishreboot.qml" line="57"/>
-        <source>Your device will shutdown</source>
-        <translation>Laitteesi sulkeutuu</translation>
-    </message>
-    <message>
-        <location filename="../qml/harbour-sailfishreboot.qml" line="63"/>
-        <source>Your device will reboot</source>
-        <translation>Laitteesi käynnistyy uudelleen</translation>
     </message>
 </context>
 </TS>
