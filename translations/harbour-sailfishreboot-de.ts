@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="de">
 <context>
@@ -68,17 +67,17 @@
     <message>
         <location filename="../qml/common/AboutModel.qml" line="55"/>
         <source>Translate this app</source>
-        <translation type="unfinished"></translation>
+        <translation>Übersetze die App</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="56"/>
         <source>on translate.neufing.org</source>
-        <translation type="unfinished"></translation>
+        <translation>auf translate.neufing.org</translation>
     </message>
     <message>
         <location filename="../qml/common/AboutModel.qml" line="57"/>
         <source>Translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Übersetzung</translation>
     </message>
 </context>
 <context>
@@ -125,12 +124,12 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="46"/>
         <source>Your device will shutdown</source>
-        <translation type="unfinished">Dein Gerät wird ausgeschaltet</translation>
+        <translation>Dein Gerät wird ausgeschaltet</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="52"/>
         <source>Your device will reboot</source>
-        <translation type="unfinished">Dein Gerät wird neugestartet</translation>
+        <translation>Dein Gerät wird neu gestartet</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="69"/>
