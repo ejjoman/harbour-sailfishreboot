@@ -179,7 +179,7 @@
         <location filename="../qml/pages/SettingsPage.qml" line="44"></location>
         <source>%n second(s)</source>
         <translation><numerusform>%n second</numerusform>
-        <numerusform></numerusform>
+        <numerusform>%n seconds</numerusform>
         </translation></message>
 </context>
 </TS>
