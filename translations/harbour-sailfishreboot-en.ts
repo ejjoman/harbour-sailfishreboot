@@ -178,7 +178,7 @@
     <message numerus="yes">
         <location filename="../qml/pages/SettingsPage.qml" line="44"></location>
         <source>%n second(s)</source>
-        <translation><numerusform>Off</numerusform>
+        <translation><numerusform>%n sedond</numerusform>
         <numerusform>%n seconds</numerusform>
         </translation></message>
 </context>
