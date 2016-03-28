@@ -1,5 +1,4 @@
 import QtQuick 2.0
-import harbour.sailfishreboot.Settings 1.0
 import org.nemomobile.configuration 1.0
 
 ConfigurationGroup {

@@ -15,8 +15,7 @@ QT += dbus
 SOURCES += \
     src/systemboottime.cpp \
     src/dsmeqmladapter.cpp \
-    src/harbour-sailfishreboot.cpp \
-    src/qmlsettings.cpp
+    src/harbour-sailfishreboot.cpp
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
@@ -36,8 +35,7 @@ OTHER_FILES += \
 
 HEADERS += \
     src/systemboottime.h \
-    src/dsmeqmladapter.h \
-    src/qmlsettings.h
+    src/dsmeqmladapter.h
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
 
