@@ -44,13 +44,13 @@ Page {
 
     function shutdown() {
         remorsePopup.optionalExecute(qsTr("Your device will shutdown"), function() {
-            dsmeAdapter.shutdown();
+            dsmeDBusInterface.shutdown();
         }, settings.remorseTimeout * 1000);
     }
 
     function reboot() {
         remorsePopup.optionalExecute(qsTr("Your device will reboot"), function() {
-            dsmeAdapter.reboot();
+            dsmeDBusInterface.reboot();
         }, settings.remorseTimeout * 1000);
     }
 

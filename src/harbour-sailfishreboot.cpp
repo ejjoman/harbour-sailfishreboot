@@ -35,7 +35,6 @@
 #include <QtQuick>
 #include <sailfishapp.h>
 #include "systemboottime.h"
-#include "dsmeqmladapter.h"
 
 int main(int argc, char *argv[])
 {
@@ -53,9 +52,6 @@ int main(int argc, char *argv[])
 
     QQuickView *view = SailfishApp::createView();
     view->setSource(SailfishApp::pathTo("qml/harbour-sailfishreboot.qml"));
-
-    QQmlContext *context = view->rootContext();
-    context->setContextProperty("dsmeAdapter", new DsmeQmlAdapter());
 
     view->show();
 

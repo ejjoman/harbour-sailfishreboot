@@ -71,6 +71,10 @@ ApplicationWindow
     Settings {
         id: settings
     }
+
+    DsmeDBusInterface {
+        id: dsmeDBusInterface
+    }
 }
 
 
