@@ -1,9 +1,0 @@
-[main]
-host = https://www.transifex.com
-type = TS
-
-[harbour-sailfishreboot.harbour-sailfishreboot]
-file_filter = translations/harbour-sailfishreboot-<lang>.ts
-source_file = translations/harbour-sailfishreboot.ts
-source_lang = en
-
